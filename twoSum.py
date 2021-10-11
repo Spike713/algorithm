@@ -12,5 +12,6 @@ class Solution(object):
             if target - num in hashtable:
         # 如果存在就返回字典记录索引和当前索引
                 return [hashtable[target - num], i]
-            hashtable[nums[i]] = i
+        # 如果不存在就放入哈希表里
+            hashtable[num] = i
         return []
